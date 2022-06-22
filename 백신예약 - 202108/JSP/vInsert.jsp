@@ -24,21 +24,26 @@
 	function chkVal() {
 		if(!document.vInsert.resvno.value) {
 			alert("예약번호를 입력하지 않았습니다");
+			document.vInsert.resvno.focus();
 			return false;
-		} else if(!document.vInsert.resvno.value) {
+		} else if(!document.vInsert.jumin.value) {
 			alert("주민번호를 입력하지 않았습니다");
+			document.vInsert.jumin.focus();
 			return false;
-		} else if(!document.vInsert.resvno.value) {
-			alert("백신코드를 입력하지 않았습니다");
+		} else if(document.vInsert.vcode.value == "none") {
+			alert("백신코드가 선택되지 않았습니다");
+			document.vInsert.vcode.focus();
 			return false;
-		} else if(!document.vInsert.resvno.value) {
-			alert("병원코드를 입력하지 않았습니다");
+		} else if(!document.vInsert.hospcode.value) {
+			alert("병원이 선택되지 않았습니다");
 			return false;
-		} else if(!document.vInsert.resvno.value) {
+		} else if(!document.vInsert.resvdate.value) {
 			alert("예약날짜를 입력하지 않았습니다");
+			document.vInsert.resvdate.focus();
 			return false;
-		} else if(!document.vInsert.resvno.value) {
+		} else if(!document.vInsert.resvtime.value) {
 			alert("예약시간을 입력하지 않았습니다");
+			document.vInsert.resvtime.focus();
 			return false;
 		}
 		
@@ -78,7 +83,7 @@
 					<th>백신코드</th>
 					<td>
 						<select name="vcode" size="" style="padding: 5px">
-							<option value="">백신선택</option>
+							<option value="none">백신선택</option>
 							<option value="V001">A백신</option>
 							<option value="V002">B백신</option>
 							<option value="V003">C백신</option>

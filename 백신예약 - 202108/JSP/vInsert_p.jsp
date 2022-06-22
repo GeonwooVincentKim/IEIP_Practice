@@ -11,11 +11,10 @@
 	PreparedStatement pstmt = conn.prepareStatement(sql);
 	pstmt.setInt(1, Integer.parseInt(request.getParameter("resvno")));
 	pstmt.setString(2, request.getParameter("jumin"));
-	pstmt.setString(6, request.getParameter("vcode"));
 	pstmt.setString(3, request.getParameter("hospcode"));
 	pstmt.setString(4, request.getParameter("resvdate"));
 	pstmt.setInt(5, Integer.parseInt(request.getParameter("resvtime")));
-	
+	pstmt.setString(6, request.getParameter("vcode"));
 	
 	pstmt.executeUpdate();
 
