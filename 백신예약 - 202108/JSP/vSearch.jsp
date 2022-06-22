@@ -13,7 +13,7 @@
 	function chkNo() {
 		if(!document.vSearchForm.v_resvno.value) {
 			alert("예약번호를 입력해주세요.")
-			focus;
+			documnet.vSearchForm.v_resvno.focus();
 			return false;
 		}
 		
