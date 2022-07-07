@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="쇼핑몰 회원관리/cbq_member/src/main/java"/>
+	<classpathentry kind="lib" path="쇼핑몰 회원관리/cbq_member/src/main/webapp/WEB-INF/lib/ojdbc6.jar"/>
+	<classpathentry kind="output" path="쇼핑몰 회원관리/cbq_member/build/classes"/>
+</classpath>
