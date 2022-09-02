@@ -4,7 +4,6 @@
 <%@ page import="cbq_001.DBConnect" %>
 
 <%
-
 	String sql = "insert into tbl_vaccresv_202108 values(?, ?, ?, ?, ?, ?)";
 
 	Connection conn = DBConnect.getConnection();
